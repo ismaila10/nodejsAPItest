@@ -91,7 +91,7 @@ export const getUsers = (req, res) => {
     .then((users) => {
         if(!users) {
             return res.status(404).send({
-                message: `pas d'users `,
+                message: `pas d'users à afficher `,
             });
         }
         res.send(users);
